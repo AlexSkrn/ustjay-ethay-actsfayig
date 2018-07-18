@@ -24,7 +24,7 @@ def home():
 
     r = requests.post("http://hidden-journey-62459.herokuapp.com/piglatinize/",
                       allow_redirects=False,
-                      data={'input_text': 'fact'})
+                      data={'input_text': fact})
     template = """
     <a href={}>{}</a>
     """
